@@ -108,8 +108,8 @@ In both cases using a vector and `sort` may be more efficient
 than using a `set` or `BTreeSet`. This is because the cost of performing
 insertion and tree rotations in a binary tree is nonzero.
 
-AFAIK, C++ has no equivent of the Rust string slice `&str`. This may just show
-my ignorance of the current standard.
+Note `std::string_view` is an equivalent to Rust's `&str` and may
+be a better choice than `string`.
 
 Amy Thomason
 Atomic Increment Ltd - Rust and C++ training, porting and wizzardry.
